@@ -6,7 +6,7 @@ $(document).ready(function() {
   var lossTot = 0;
   var guessLeft = 9;
   var guessArray = [];
-  var alphArray = [
+  var alphaArray = [
     "a",
     "b",
     "c",
@@ -44,9 +44,15 @@ $(document).ready(function() {
   $("#guess-left").text("Guesses Left: " + guessLeft);
 
   // Create on key events for all letters and store in userGuess
+
   // Refer to https://codegazerants.com/2015/09/12/javascript-catch-keystrokes/
   // Use https://keycode.info to know what ID goes with what keystroke
   // notice letter keys go from 65-90
+
+  // Write letters to guessArray with each on key event
+
+  // Subtract 1 from guessLeft with each on key event
+
   document.onkeydown = function(userGuess) {
     switch (userGuess.keyCode) {
       case 65:
@@ -285,11 +291,11 @@ $(document).ready(function() {
     }
   };
 
-  // Write letters to guessArray with each on key event
-
-  // Subtract 1 from guessLeft with each on key event
-
   // Make function to use random number generator / round down and apply to alphArray to generate compGuess
+  // from class notes: Math.floor(Math.random() * array.lenth)
+
+  compGuess = alphaArray[Math.floor(Math.random() * alphaArray.length)];
+  console.log(compGuess);
 
   // Create reset function to reset guessArray and guessLeft and generate compGuess
 
