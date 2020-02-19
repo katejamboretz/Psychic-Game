@@ -44,6 +44,18 @@ $(document).ready(function() {
   $("#guess-left").text("Guesses Left: " + guessLeft);
 
   // Create on key events for all letters and store in userGuess
+  // Refer to https://codegazerants.com/2015/09/12/javascript-catch-keystrokes/
+  document.onkeydown = function(userGuess) {
+    switch (userGuess.keyCode) {
+      case 65:
+        var let = "a";
+        guessArray.push("" + userGuess + "");
+        $("#guess-array").append("<p>" + let + "</p>");
+        guessLeft--;
+        $("#guess-left").text("Guesses Left: " + guessLeft);
+        break;
+    }
+  };
 
   // Write letters to guessArray with each on key event
 
