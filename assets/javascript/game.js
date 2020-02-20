@@ -1,4 +1,6 @@
 // When document ready
+// removed written title for guess-array and place in html
+
 function reset() {
   guessLeft = 9;
   guessArray = [];
