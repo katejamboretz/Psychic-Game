@@ -8,7 +8,7 @@ h1 {
   background-color: wheat;
   color: teal;
   padding: 30px;
-  font-size: xx-large;
+  font-size: 100px;
   font-weight: bolder;
 }
 
@@ -16,9 +16,10 @@ h2 {
   padding: 40px;
   color: tomato;
   font-weight: bold;
-  font-size: large;
+  font-size: 50px;
 }
 
 p {
   padding: 10px;
+  font-size: 30px;
 }
