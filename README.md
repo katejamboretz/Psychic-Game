@@ -2,6 +2,10 @@
 
 In this game, when the page is loaded, a random letter is assigned to a variable, using an alphabet array and Math functions, that the user will guess by picking different letters on the keyboard. An on key event and a switch event checks whether the letter matches the random letter picked by the computer. It will add to the variables guesses, wins or losses depending on the users choice and will display users guess on the page by appending paragraph elements to a specific div. If the user wins, the guess number and displayed letters will cleared, but wins and losses will be tracked, unless the page is refreshed. This was a javascript assignment for UC Berkeley Extension Full Stack Coding Bootcamp.
 
+## Link to Deployed Website
+
+[Psychic Game](https://katejamboretz.github.io/Psychic-Game/)
+
 ## Built With
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - HyperText Markup Language used for structure
@@ -11,6 +15,7 @@ In this game, when the page is loaded, a random letter is assigned to a variable
 ## Authors
 
 - **Kate Jamboretz** - _Initial work_ - [katejamboretz](https://github.com/katejamboretz)
+- **UCB Extension Full Stack Program** - _provide assignment objective, overall purpose and visual design ideas and repository/file nomenclature and organization_
 
 ## Acknowledgments
 
